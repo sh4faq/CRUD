@@ -92,23 +92,23 @@ Start the server:
 npm start
 ```
 
-The server will start on `http://localhost:3000`
+The server will start on `http://localhost:3001`
 
 ## API Endpoints
 
 ### Get all merchants
 ```
-GET http://localhost:3000/merchants
+GET http://localhost:3001/merchants
 ```
 
 ### Get a single merchant by ID
 ```
-GET http://localhost:3000/merchants/:id
+GET http://localhost:3001/merchants/:id
 ```
 
 ### Create a new merchant
 ```
-POST http://localhost:3000/merchants
+POST http://localhost:3001/merchants
 Content-Type: application/json
 
 {
@@ -119,7 +119,7 @@ Content-Type: application/json
 
 ### Update a merchant
 ```
-PUT http://localhost:3000/merchants/:id
+PUT http://localhost:3001/merchants/:id
 Content-Type: application/json
 
 {
@@ -130,7 +130,7 @@ Content-Type: application/json
 
 ### Delete a merchant
 ```
-DELETE http://localhost:3000/merchants/:id
+DELETE http://localhost:3001/merchants/:id
 ```
 
 ## Testing the API
@@ -145,23 +145,23 @@ You can test the API using:
 
 ```bash
 # Get all merchants
-curl http://localhost:3000/merchants
+curl http://localhost:3001/merchants
 
 # Get merchant by ID
-curl http://localhost:3000/merchants/1
+curl http://localhost:3001/merchants/1
 
 # Create new merchant
-curl -X POST http://localhost:3000/merchants \
+curl -X POST http://localhost:3001/merchants \
   -H "Content-Type: application/json" \
   -d "{\"merchant_name\":\"Amazon\",\"country\":\"United States\"}"
 
 # Update merchant
-curl -X PUT http://localhost:3000/merchants/1 \
+curl -X PUT http://localhost:3001/merchants/1 \
   -H "Content-Type: application/json" \
   -d "{\"merchant_name\":\"Amazon Updated\",\"country\":\"USA\"}"
 
 # Delete merchant
-curl -X DELETE http://localhost:3000/merchants/1
+curl -X DELETE http://localhost:3001/merchants/1
 ```
 
 ## Project Structure
